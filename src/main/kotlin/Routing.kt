@@ -23,32 +23,29 @@ class MainTemplate(val titleText:String) :Template<HTML>{
                 div(classes = "flex-col") {
                     h1(classes = "relative size-32 font-mono text-2xl font-bold") { +"QR GEN" }
                     hr()
-                    ul(classes = "flex gap-4") {
-                        li {
+                    ul(classes = "m-4") {
+                        li(classes = "ml-2 my-8") {
                             a(href = "#") { +"Website" }
                         }
-                        li {
+                        li(classes = "ml-2 my-8") {
                             a(href = "#") { +"Text Message" }
                         }
-                        li {
+                        li(classes = "ml-2 my-8") {
                             a(href = "#") { +"Image" }
                         }
-                        li {
+                        li(classes = "ml-2 my-8") {
                             a(href = "#") { +"Google Docs" }
                         }
-                        li {
-                            a(href = "#") { +"Instagram" }
-                        }
-                        li {
+                        li(classes = "ml-2 my-8") {
                             a(href = "#") { +"FaceBook" }
                         }
-                        li {
+                        li(classes = "ml-2 my-8") {
                             a(href = "#") { +"Youtube" }
                         }
-                        li {
+                        li(classes = "ml-2 my-8") {
                             a(href = "#") { +"SnapChat" }
                         }
-                        li {
+                        li(classes = "ml-2 my-8") {
                             a(href = "#") { +"X" }
                         }
                     }
