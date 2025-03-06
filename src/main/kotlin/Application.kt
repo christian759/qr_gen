@@ -13,6 +13,7 @@ fun Application.module() {
     configureRouting()
 }
 
+// static files and images
 fun Routing.staticFiles() {
     staticResources("/static", "static")
 }

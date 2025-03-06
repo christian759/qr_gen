@@ -24,50 +24,50 @@ class MainTemplate(val titleText:String) :Template<HTML>{
                     hr()
                     ul {
                         li(classes = "ml-2 my-8") {
-                            div(classes = "flex-row items-center" ) {
-                                img(src="/static/ww.png", classes = "w-8 h-8 mr-2")
+                            div(classes = "flex flex-row items-center" ) {
+                                img(src="/static/ww.png", classes = "w-6 h-6 mr-2")
                                 a(href = "#") { +"Website" }
                             }
                         }
                         li(classes = "ml-2 my-8") {
-                            div(classes = "flex-row items-center") {
+                            div(classes = "flex flex-row items-center") {
                                 img(src="/static/text.png", classes = "w-8 h-8 mr-2")
                                 a(href = "#") { +"Text Message" }
                             }
                         }
                         li(classes = "ml-2 my-8") {
-                            div(classes = "flex-row items-center"){
-                                img(src="/static/img.png", classes = "w-8 h-8 mr-2")
+                            div(classes = "flex flex-row items-center"){
+                                img(src="/static/img.png", classes = "w-6 h-6 mr-2")
                                 a(href = "#") { +"Image" }
                             }
                         }
                         li(classes = "ml-2 my-8") {
-                            div(classes = "flex-row items-center") {
-                                img(src="/static/drive.png", classes = "w-8 h-8 mr-2")
+                            div(classes = "flex flex-row items-center") {
+                                img(src="/static/drive.png", classes = "w-6 h-6 mr-2")
                                 a(href = "#") { +"Google Docs" }
                             }
                         }
                         li(classes = "ml-2 my-8") {
-                            div(classes = "flex-row items-center") {
-                                img(src="/static/face.png", classes = "w-8 h-8 mr-2")
+                            div(classes = "flex flex-row items-center") {
+                                img(src="/static/face.png", classes = "w-6 h-6 mr-2")
                                 a(href = "#") { +"FaceBook" }
                             }
                         }
                         li(classes = "ml-2 my-8") {
-                            div(classes = "flex-row items-center") {
-                                img(src="/static/you.png", classes = "w-8 h-8 mr-2")
+                            div(classes = "flex flex-row items-center") {
+                                img(src="/static/you.png", classes = "w-6 h-6 mr-2")
                                 a(href = "#") { +"Youtube" }
                             }
                         }
                         li(classes = "ml-2 my-8") {
-                            div(classes = "flex-row items-center") {
-                                img(src="/static/snap.png", classes = "w-8 h-8 mr-2")
+                            div(classes = "flex flex-row items-center") {
+                                img(src="/static/snap.png", classes = "w-6 h-6 mr-2")
                                 a(href = "#") { +"SnapChat" }
                             }
                         }
                         li(classes = "ml-2 my-8") {
-                            div(classes = "flex-row items-center") {
-                                img(src="/static/x.png", classes = "w-8 h-8 mr-2")
+                            div(classes = "flex flex-row items-center") {
+                                img(src="/static/x.png", classes = "w-6 h-6 mr-2")
                                 a(href = "#") { +"X" }
                             }
                         }
