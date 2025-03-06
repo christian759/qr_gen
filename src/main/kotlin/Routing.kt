@@ -2,7 +2,6 @@ package com.ceo1
 
 import io.ktor.server.application.*
 import io.ktor.server.html.*
-import io.ktor.server.http.content.*
 import io.ktor.server.plugins.statuspages.StatusPages
 import io.ktor.server.response.respondText
 import io.ktor.server.routing.*
@@ -23,30 +22,54 @@ class MainTemplate(val titleText:String) :Template<HTML>{
                 div(classes = "flex-col") {
                     h1(classes = "relative size-32 font-mono text-2xl font-bold") { +"QR GEN" }
                     hr()
-                    ul(classes = "m-4") {
+                    ul {
                         li(classes = "ml-2 my-8") {
-                            a(href = "#") { +"Website" }
+                            div(classes = "flex-row items-center" ) {
+                                img(src="/static/ww.png", classes = "w-8 h-8 mr-2")
+                                a(href = "#") { +"Website" }
+                            }
                         }
                         li(classes = "ml-2 my-8") {
-                            a(href = "#") { +"Text Message" }
+                            div(classes = "flex-row items-center") {
+                                img(src="/static/text.png", classes = "w-8 h-8 mr-2")
+                                a(href = "#") { +"Text Message" }
+                            }
                         }
                         li(classes = "ml-2 my-8") {
-                            a(href = "#") { +"Image" }
+                            div(classes = "flex-row items-center"){
+                                img(src="/static/img.png", classes = "w-8 h-8 mr-2")
+                                a(href = "#") { +"Image" }
+                            }
                         }
                         li(classes = "ml-2 my-8") {
-                            a(href = "#") { +"Google Docs" }
+                            div(classes = "flex-row items-center") {
+                                img(src="/static/drive.png", classes = "w-8 h-8 mr-2")
+                                a(href = "#") { +"Google Docs" }
+                            }
                         }
                         li(classes = "ml-2 my-8") {
-                            a(href = "#") { +"FaceBook" }
+                            div(classes = "flex-row items-center") {
+                                img(src="/static/face.png", classes = "w-8 h-8 mr-2")
+                                a(href = "#") { +"FaceBook" }
+                            }
                         }
                         li(classes = "ml-2 my-8") {
-                            a(href = "#") { +"Youtube" }
+                            div(classes = "flex-row items-center") {
+                                img(src="/static/you.png", classes = "w-8 h-8 mr-2")
+                                a(href = "#") { +"Youtube" }
+                            }
                         }
                         li(classes = "ml-2 my-8") {
-                            a(href = "#") { +"SnapChat" }
+                            div(classes = "flex-row items-center") {
+                                img(src="/static/snap.png", classes = "w-8 h-8 mr-2")
+                                a(href = "#") { +"SnapChat" }
+                            }
                         }
                         li(classes = "ml-2 my-8") {
-                            a(href = "#") { +"X" }
+                            div(classes = "flex-row items-center") {
+                                img(src="/static/x.png", classes = "w-8 h-8 mr-2")
+                                a(href = "#") { +"X" }
+                            }
                         }
                     }
                 }
@@ -70,12 +93,11 @@ fun Application.configureRouting() {
             val title = "QR GENERATOR"
             call.respondHtmlTemplate(MainTemplate(title)) {
                 content {
-
                 }
             }
         }
-        // Static plugin. To access `/static`
-        staticResources("/static", "static")
+        staticFiles()
     }
+
 }
 
